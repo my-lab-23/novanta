@@ -42,6 +42,8 @@ javafx {
 
 dependencies {
 
+    implementation("com.github.doyaaaaaken:kotlin-csv-jvm:1.2.0")
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }

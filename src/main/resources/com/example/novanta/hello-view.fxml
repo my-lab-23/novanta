@@ -1,25 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.novanta.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
 
-    <Label fx:id="numeroEstratto" text="N">
-      <font>
-         <Font size="84.0" />
-      </font></Label>
-    <Button onAction="#onHelloButtonClick" text="Estrai">
-      <font>
-         <Font size="42.0" />
-      </font></Button>
-   <Label fx:id="numeriEstratti" text="Estratti" wrapText="true">
-      <font>
-         <Font size="21.0" />
-      </font></Label>
-</VBox>
+<BorderPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.novanta.HelloController">
+   <center>
+
+                   <Label fx:id="numeroEstratto" text="N" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="84.0" />
+         </font>
+      </Label>
+   </center>
+   <right>
+       <Button onAction="#onHelloButtonClick" text="Estrai" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+   </right>
+   <bottom>
+      <Label fx:id="numeriEstratti" text="Estratti" wrapText="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </bottom>
+   <top>
+      <Label fx:id="smorfia" text="Label" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
